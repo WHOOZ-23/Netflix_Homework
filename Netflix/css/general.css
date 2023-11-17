@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 0.625em;
+}
+
+body{
+  font-family: 'Noto Sans', 'Noto Sans KR', Arial, sans-serif;
+  background-color: #181818;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}

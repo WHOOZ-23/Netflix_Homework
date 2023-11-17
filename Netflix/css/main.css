@@ -1,0 +1,112 @@
+.main_content {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  max-height: 1000px;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_content_container {
+  position: relative;
+  max-width: 700px;
+  height: 100%;
+  padding: 50px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(90deg,#181818 10%,rgba(23,23,23,.98) 20%,rgba(23,23,23,.97) 25%,rgba(23,23,23,.95) 35%,rgba(23,23,23,.94) 40%,rgba(23,23,23,.92) 45%,rgba(23,23,23,.9) 50%,rgba(23,23,23,.87) 55%,rgba(23,23,23,.82) 60%,rgba(23,23,23,.75) 65%,rgba(23,23,23,.63) 70%,rgba(23,23,23,.45) 75%,rgba(23,23,23,.27) 80%,rgba(23,23,23,.15) 85%,rgba(23,23,23,.08) 90%,rgba(23,23,23,.03) 95%,rgba(23,23,23,0));
+  z-index: 2;
+}
+
+.main_content_logo {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.main_content_mylist::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  margin-right: 7px;
+  font-size: 20px;
+}
+
+.main_content_play svg {
+  margin-right: 10px;
+  fill: #000;
+}
+
+.main_content_play, .main_content_mylist {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.main_content_play {
+  background-color: #fff;
+  color: #000;
+}
+
+.main_content_mylist {
+  position: relative;
+  padding-left: 40px;
+  background-color: rgba(128, 128, 128, .3);
+  color: #fff;
+}
+
+.main_content_play:hover {
+  background-color: rgb(229,9,20);
+  color: #fff;
+  transition: .3s ease;
+}
+
+.main_content_mylist:hover {
+  background-color: #fff;
+  color: #000;
+  transition: .3s ease;
+}
+
+.main_content_play:hover svg {
+  fill: #fff;
+  transition: .3s ease;
+}
+
+.main_content_play:active, .main_content_mylist:active {
+  opacity: .5;
+}
+
+.main_content_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg,#181818 0,rgba(23,23,23,.987) 1.62%,rgba(23,23,23,.951) 3.1%,rgba(23,23,23,.896) 4.5%,rgba(23,23,23,.825) 5.8%,rgba(23,23,23,.741) 7.06%,rgba(23,23,23,.648) 8.24%,rgba(23,23,23,.55) 9.42%,rgba(23,23,23,.45) 10.58%,rgba(23,23,23,.352) 11.76%,rgba(23,23,23,.259) 12.94%,rgba(23,23,23,.175) 14.2%,rgba(23,23,23,.104) 15.5%,rgba(23,23,23,.049) 16.9%,rgba(23,23,23,.013) 18.38%,rgba(23,23,23,0) 20%), url(../images/visual1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_content_mylist {
+  margin-left: 10px;
+}
+
+.main_content_info {
+  width: 500px;
+}
+
+.main_content_info p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+}
